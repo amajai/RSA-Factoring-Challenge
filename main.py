@@ -1,5 +1,4 @@
 import sys
-from prime import isprime
 from func import *
 
 
