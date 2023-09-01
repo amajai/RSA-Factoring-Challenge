@@ -29,10 +29,10 @@ int main(int ac, char **av) {
         // mpz_add_ui(B, B, 1);
         // sieve_of_eratosthenes(B, &primes, &num_primes);
         // trial_division(n, primes, num_primes, factors);
-        trial_division_wheel(n, factors, 1000000);
+        trial_division_wheel(n, factors, 100000);
         if (mpz_cmp_ui(factors[1], 0) == 0)
         {
-            pollard_p1(n, factors, 200);
+            pollard_p1(n, factors, 500);
         }
         gmp_printf("%Zd=%Zd*%Zd\n", n, factors[0], factors[1]);
 
