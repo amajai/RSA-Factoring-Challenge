@@ -32,12 +32,9 @@ int main(int ac, char **av) {
         trial_division_wheel(n, factors, 100000);
         if (mpz_cmp_ui(factors[1], 0) == 0)
         {
-            pollards_rho(n, factors, 5000);
-        }
-        if (mpz_cmp_ui(factors[1], 0) == 0)
-        {
             pollard_p1(n, factors, 199);
         }
+   
         gmp_printf("%Zd=%Zd*%Zd\n", n, factors[0], factors[1]);
 
         // for (size_t i = 0; i < num_primes; ++i)
