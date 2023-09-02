@@ -36,7 +36,7 @@ int main(int ac, char **av) {
         }
         if (mpz_cmp_ui(factors[1], 0) == 0)
         {
-            pollards_rho(n, factors, 1000);
+            pollards_rho(n, factors, 2000);
         }
         if (mpz_cmp_ui(factors[1], 0) == 0)
         {
