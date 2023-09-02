@@ -38,6 +38,10 @@ int main(int ac, char **av) {
         {
             pollards_rho(n, factors, 2000);
         }
+        if (mpz_cmp_ui(factors[1], 0) == 0)
+        {
+            trial_division_wheel(n, factors, 1000000);
+        }
         gmp_printf("%Zd=%Zd*%Zd\n", n, factors[0], factors[1]);
 
         // for (size_t i = 0; i < num_primes; ++i)
