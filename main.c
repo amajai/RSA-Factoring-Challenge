@@ -36,11 +36,11 @@ int main(int ac, char **av) {
         }
         if (mpz_cmp_ui(factors[1], 0) == 0)
         {
-            pollards_rho(n, factors, 2000);
+            pollards_rho(n, factors, 1000);
         }
         if (mpz_cmp_ui(factors[1], 0) == 0)
         {
-            trial_division_wheel(n, factors, 1000000000000);
+            trial_division_wheel(n, factors, 1000000);
         }
         gmp_printf("%Zd=%Zd*%Zd\n", n, factors[0], factors[1]);
 
