@@ -36,7 +36,7 @@ int main(int ac, char **av) {
         }
         if (mpz_cmp_ui(factors[1], 0) == 0)
         {
-            pollards_rho(n, factors, 5000);
+            pollards_rho(n, factors, 10000);
         }
         gmp_printf("%Zd=%Zd*%Zd\n", n, factors[0], factors[1]);
 
