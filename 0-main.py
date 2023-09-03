@@ -1,5 +1,5 @@
 import sys
-from func import *
+from helper_func import *
 
 
 def main():

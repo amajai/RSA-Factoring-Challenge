@@ -2,6 +2,7 @@ import math
 
 
 def trial_division(n, lst=[]):
+    """Trial division algorithm"""
     c = 0
     if n > 1:
         if lst:
