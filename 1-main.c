@@ -26,7 +26,6 @@ int main(int ac, char **av) {
         mpz_set_ui(factors[1], 0);
         mpz_set_str(n, buffer, 10);
 
-        trial_division_wheel(n, factors, 100);
         if (mpz_cmp_ui(factors[1], 0) == 0)
         {
             pollards_rho(n, factors, 10000);
